@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border:solid red 2px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation-name:my-anima ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes my-anima {
+            From{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                border: solid red ;
+                opacity: 1;
+
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                border: solid red ;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+
+
+</body>
+</html>
