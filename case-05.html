@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        main{
+            width: 1000px;
+            height: 500px;
+            border: solid red 3px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+        section>div{
+            width: 1000px;
+            height: 500px;
+            background-color: yellow;
+            border: solid black 1px;
+        }
+        section{
+            display: flex;
+            width: 4000px;
+            height: 500px;
+            animation-name: ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        section>div:nth-child(1){
+            background-image: url("Assests/images/slide1.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        section>div:nth-child(2){
+            background-image: url("Assests/images/slide2.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        section>div:nth-child(3){
+            background-image: url("Assests/images/slide3.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        section>div:nth-child(4){
+            background-image: url("Assests/images/slide4.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes ani {
+            0%,20%{
+                transform: translate(0%);
+            }
+            25%,45%{
+                transform: translate(-25%);
+            }
+            50%,70%{
+                transform: translate(-50%);
+            }
+            75%,100%{
+                transform: translate(-75%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+</main>
+</body>
+</html>
