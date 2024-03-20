@@ -3,8 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="Assests/normalize.css">
+    <style>
+        #d1{
+            height: 100vh;
+            width: 100vw;
+            background-image: url("Assests/images/sky.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+        #d2{
+            height: 200px;
+            width: 500%;
+            display: block;
+            background-image: url("Assests/images/road.jpg");
+            background-repeat: repeat-x;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            animation: road  linear 5s infinite;
+        }
+        #d3{
+            height: 250px;
+            width: 500%;
+            background-image: url("Assests/images/city.png");
+            position: absolute;
+            bottom: 200px;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation: city 20s  linear infinite;
+        }
+        #d4{
+
+            width: 350px;
+            left: 50%;
+            bottom: 100px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+        #car{
+            width: 100%;
+            animation: car linear 1s infinite;
+        }
+        #d5{
+            left: 50%;
+            bottom: 178px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+        }
+        #d5>img{
+            width: 72px;
+            height: 72px;
+            animation: wheels  1s linear infinite;
+        }
+        #back{
+            left: -147px;
+            position: absolute;
+        }
+        #front{
+            left: 66px;
+            position: absolute;
+        }
+
+
+        @keyframes road {
+            100%{
+                transform: translateX(-3400px);
+            }
+        }
+        @keyframes city {
+            100%{
+                transform: translateX(-1400px);
+            }
+        }
+        @keyframes car {
+            0%{
+                transform: translateY(-1px);
+            }
+
+            50%{
+                transform: translateY(1px);
+            }
+
+            100%{
+                transform: translateY(-1px);
+            }
+        }
+        @keyframes  wheels{
+          100%{
+              transform: rotate(360deg);
+          }
+        }
+    </style>
 </head>
 <body>
-
+<div >
+   <div id="d1">
+       <div  id="d2"></div>
+       <div id="d3"></div>
+       <div id="d4">
+           <img src="Assests/images/car.png" alt="car" id="car">
+       </div>
+       <div id="d5">
+           <img src="Assests/images/wheel.png" alt="wheel" id="front">
+           <img src="Assests/images/wheel.png" alt="wheel" id="back">
+       </div>
+   </div>
+</div>
 </body>
 </html>
