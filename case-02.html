@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+        body{
+            background-color: #3a80e8;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: lightgrey;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+        div>h3{
+            width: fit-content;
+            height: fit-content;
+            color: white;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        div::before{
+            content: "";
+            border: solid #33ccff 10px;
+            border-top-color:pink;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
+    </style>
 </head>
+
 <body>
+
+<div>
+
+    <h3>RWAD</h3>
+
+</div>
+
 
 </body>
 </html>
